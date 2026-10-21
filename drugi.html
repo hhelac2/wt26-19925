@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narudžba pizze – Pizzeria Baščaršija</title>
+</head>
+<body>
+
+    <h1>Online narudžba pizze</h1>
+    <p>Popunite formu kako biste naručili pizzu sa dostavom na kućnu adresu.</p>
+
+    <form onsubmit="return false;">
+
+        <!-- 1. podatak: unos teksta -->
+        <p>
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
+        </p>
+
+        <!-- 2. podatak: unos teksta -->
+        <p>
+            <label for="adresa">Adresa za dostavu:</label>
+            <input type="text" id="adresa" name="adresa">
+        </p>
+
+        <!-- 3. podatak: izbor tačno jedne opcije (radio buttons) -->
+        <fieldset>
+            <legend>Veličina pizze (izaberite jednu):</legend>
+
+            <input type="radio" id="mala" name="velicina" value="mala">
+            <label for="mala">Mala (26 cm)</label>
+
+            <input type="radio" id="srednja" name="velicina" value="srednja">
+            <label for="srednja">Srednja (32 cm)</label>
+
+            <input type="radio" id="velika" name="velicina" value="velika">
+            <label for="velika">Velika (40 cm)</label>
+        </fieldset>
+
+        <!-- 4. podatak: izbor više opcija (checkbox) -->
+        <fieldset>
+            <legend>Dodaci (možete izabrati više):</legend>
+
+            <input type="checkbox" id="sir" name="dodaci" value="sir">
+            <label for="sir">Dodatni sir</label>
+
+            <input type="checkbox" id="sampinjoni" name="dodaci" value="sampinjoni">
+            <label for="sampinjoni">Šampinjoni</label>
+
+            <input type="checkbox" id="masline" name="dodaci" value="masline">
+            <label for="masline">Masline</label>
+
+            <input type="checkbox" id="sudzuka" name="dodaci" value="sudzuka">
+            <label for="sudzuka">Sudžuka</label>
+
+            <input type="checkbox" id="kukuruz" name="dodaci" value="kukuruz">
+            <label for="kukuruz">Kukuruz</label>
+        </fieldset>
+
+        <!-- 5. podatak: izbor tačno jedne opcije (select) -->
+        <p>
+            <label for="placanje">Način plaćanja:</label>
+            <select id="placanje" name="placanje">
+                <option value="gotovina">Gotovina pri preuzimanju</option>
+                <option value="kartica">Kartica pri preuzimanju</option>
+                <option value="online">Online plaćanje</option>
+            </select>
+        </p>
+
+        <!-- 6. podatak: unos dužeg teksta -->
+        <p>
+            <label for="napomena">Napomena za dostavljača:</label><br>
+            <textarea id="napomena" name="napomena" rows="3" cols="40"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Naruči</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <section>
+
+        <h2>Primjeri unosa</h2>
+
+        <h3>Primjer 1</h3>
+        <ul>
+            <li>Ime i prezime: Amra Hodžić</li>
+            <li>Adresa za dostavu: Zmaja od Bosne 12, Sarajevo</li>
+            <li>Veličina pizze: <strong>Srednja</strong> (samo jedna opcija)</li>
+            <li>Dodaci: <strong>Dodatni sir, Šampinjoni, Masline</strong> (tri opcije odjednom)</li>
+            <li>Način plaćanja: Kartica pri preuzimanju</li>
+            <li>Napomena: Zvono ne radi, molim pozovite telefonom.</li>
+        </ul>
+
+        <h3>Primjer 2</h3>
+        <ul>
+            <li>Ime i prezime: Kenan Begić</li>
+            <li>Adresa za dostavu: Titova 5, Sarajevo</li>
+            <li>Veličina pizze: <strong>Velika</strong> (samo jedna opcija)</li>
+            <li>Dodaci: <strong>Sudžuka</strong> (samo jedan dodatak)</li>
+            <li>Način plaćanja: Gotovina pri preuzimanju</li>
+            <li>Napomena: (prazno)</li>
+        </ul>
+
+        <p>
+            Primjeri pokazuju razliku: kod veličine pizze uvijek je izabrana tačno jedna opcija,
+            jer izbor nove opcije automatski poništava prethodnu. Kod dodataka broj izabranih
+            opcija se mijenja – u prvom primjeru su izabrana tri dodatka, a u drugom samo jedan.
+        </p>
+    </section>
+
+</body>
+</html>
