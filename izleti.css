@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #2b2b2b;
+    width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* id selektor – jedinstveni glavni naslov */
+#glavni-naslov {
+    color: #2e3192;
+    text-align: center;
+}
+
+/* zajednički izgled za sve tri ponude – piše se samo jednom */
+.ponuda {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border: 2px solid #00aeef;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.ponuda h2 {
+    color: #2e3192;
+    margin-top: 0;
+}
+
+.info {
+    font-weight: bold;
+    color: #00aeef;
+}
+
+/* preporučena ponuda – mijenja se samo pozadina i border */
+.preporuceno {
+    background-color: #fff0f8;
+    border-color: #ec008c;
+}
+
+.oznaka {
+    color: #ec008c;
+    font-weight: bold;
+    margin-top: 0;
+}
