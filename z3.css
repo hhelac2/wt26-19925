@@ -1,0 +1,20 @@
+.tablica {
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+.tablica th,
+.tablica td {
+    border: 1px solid black;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.tablica th {
+    background-color: #CCCCCC;
+    font-weight: bold;
+}
+
+.tablica tr.parni td {
+    background-color: #FFF2CC;
+}
