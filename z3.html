@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencija troškova</title>
+    <link rel="stylesheet" href="z3.css">
+</head>
+<body>
+    <main>
+        <h1>Evidencija troškova</h1>
+
+        <form id="forma">
+            <div class="red-forme">
+                <div>
+                    <label for="naziv">Naziv:</label>
+                    <input type="text" id="naziv">
+                </div>
+                <div>
+                    <label for="iznos">Iznos (KM):</label>
+                    <input type="text" id="iznos">
+                </div>
+                <button type="submit" id="dodaj">Dodaj</button>
+            </div>
+            <p id="greska"></p>
+        </form>
+
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Iznos (KM)</th>
+                </tr>
+            </thead>
+            <tbody id="tijelo">
+                <tr>
+                    <td>Kafa</td>
+                    <td class="broj">3.50</td>
+                </tr>
+                <tr>
+                    <td>Autobuska karta</td>
+                    <td class="broj">1.80</td>
+                </tr>
+                <tr>
+                    <td>Knjiga</td>
+                    <td class="broj">25.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="broj-stavki">Ukupno (0 stavki)</td>
+                    <td id="zbir" class="broj">0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <script src="z3.js"></script>
+</body>
+</html>

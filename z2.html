@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratka obavijest</title>
+    <link rel="stylesheet" href="z2.css">
+</head>
+<body>
+    <main>
+        <h1>Kratka obavijest</h1>
+
+        <form id="forma">
+            <label for="naslov">Naslov:</label>
+            <input type="text" id="naslov" name="naslov">
+
+            <label for="tekst">Tekst obavijesti:</label>
+            <textarea id="tekst" name="tekst" rows="5"></textarea>
+
+            <fieldset>
+                <legend>Kategorija:</legend>
+                <label>
+                    <input type="radio" name="kategorija" value="hitno" checked>
+                    Hitno
+                </label>
+                <label>
+                    <input type="radio" name="kategorija" value="informativno">
+                    Informativno
+                </label>
+            </fieldset>
+
+            <p id="greska"></p>
+
+            <div class="dugmad">
+                <button type="button" id="pregled">Prikaži pregled</button>
+                <button type="button" id="vrati">Vrati formu na početno stanje</button>
+            </div>
+        </form>
+
+        <section id="prikaz">
+            <h2>Pregled obavijesti</h2>
+            <div id="kartica" class="kartica">
+                <span id="prikaz-kategorija" class="oznaka">Kategorija</span>
+                <h3 id="prikaz-naslov">Naslov obavijesti</h3>
+                <p id="prikaz-tekst">Ovdje će se prikazati tekst obavijesti.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="z2.js"></script>
+</body>
+</html>

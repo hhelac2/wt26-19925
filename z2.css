@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+fieldset {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+#greska {
+    color: #d32f2f;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.dugmad {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+#vrati {
+    background-color: #757575;
+}
+
+#prikaz {
+    margin-top: 30px;
+}
+
+/* Kartica za pregled */
+.kartica {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.oznaka {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #ffffff;
+}
+
+/* Stil zavisi od kategorije */
+.kartica.hitno {
+    border-color: #d32f2f;
+    background-color: #fdecea;
+}
+
+.kartica.hitno .oznaka {
+    background-color: #d32f2f;
+}
+
+.kartica.hitno h3 {
+    color: #b71c1c;
+}
+
+.kartica.informativno {
+    border-color: #1976d2;
+    background-color: #e8f1fb;
+}
+
+.kartica.informativno .oznaka {
+    background-color: #1976d2;
+}
+
+.kartica.informativno h3 {
+    color: #0d47a1;
+}
+
+#prikaz-tekst {
+    white-space: pre-wrap;
+}

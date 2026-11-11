@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.red-forme {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.red-forme div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+#greska {
+    color: #d32f2f;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f8fc;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e3ecf7;
+}
+
+.broj {
+    text-align: right;
+}
